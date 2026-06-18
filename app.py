@@ -19,7 +19,7 @@ if not api_key:
     raise ValueError("API Key not found! Please set the GEMINI_API_KEY environment variable in your environment or in a .env file.")
 
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-3.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # 2. Tool Logic
 def text_summarizer(text):
